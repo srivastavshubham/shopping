@@ -1,6 +1,7 @@
 {
   "name": "shopping",
   "version": "0.1.0",
+  "homepage": "https://srivastavshubham.github.io/shopping",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
+    "gh-pages": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^6.16.0",
@@ -17,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
