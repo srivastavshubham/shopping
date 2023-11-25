@@ -33,7 +33,7 @@ const ProtectedRoute = () => {
 function App() {
   return (
     <CartContextProvider>
-    <Router>
+    <Router basename='/shopping-app'>
     <Navbar/>
     <Routes>
       <Route exact path="/" element={<Products/>} />
